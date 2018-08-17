@@ -1,0 +1,45 @@
+
+<hr>
+<h3>Data from Parent to child </h3>
+<p>
+  {{"Data from Parent =>" + invar }}
+</p>
+
+<h3>Data from Child to Parent </h3>
+<p>
+  {{ demo }}
+</p>
+
+<h3>Pipes</h3>
+<p>{{ name | lowercase }}</p>
+<p>{{ name | uppercase }}</p>
+<p>{{ messages | titlecase }}</p>
+<p>{{ name | slice:3:6 }}</p>
+<p>{{ person | json }}</p>
+
+<h4>Number Pipes</h4>
+<p>{{1.456 | number:'1.2-3' }}</p>
+<p>{{1.456 | number:'1.4-5' }}</p>
+<p>{{1.456 | number:'3.1-2' }}</p>
+<p>{{0.75 | percent }}</p>
+<p>{{0.75 | currency }}</p>
+<p>{{0.75 | currency: 'INR' }}</p>
+
+<h4>Date Pipes</h4>
+<p>{{ date }}</p>
+<p>{{ date | date: 'short' }}</p>
+<p>{{ date | date: 'shortDate' }}</p>
+<p>{{ date | date: 'shortTime' }}</p>
+<p>{{ date | date: 'medium' }}</p>
+
+
+
+
+
+
+
+
+
+
+
+

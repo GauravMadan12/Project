@@ -1,0 +1,32 @@
+<h2 [class] = "successclass" >Gaurav Madan</h2>
+<h2 [class] = "successclass" class = "text-special">Gaurav Madan</h2>
+<h2 [class.text-danger] = "val" >Gaurav Madan</h2>
+
+<!-- to bind multiple classes to one property -->
+<h2 [ngClass] = "messageclass" >Gaurav Madan</h2>
+
+<!-- Event Binding -->
+<button  (click) = "onclick()">Click me</button>
+{{ val1  }}  <br>
+
+<button  (click) = "onClick($event)">Click me</button>
+{{ val2 }} <br>
+
+<button  (click) = "names = 'Gaurav Madan' ">Name</button>
+{{ names }} <br>
+
+<!-- Template reference variable -->
+<input type = "text" #myinput>
+<button (click) = "message(myinput.value)">Text Vaue</button>
+{{ msg }} <br>
+
+<!-- Two way Binding -->
+<h3>Two way Binding</h3>
+<input type = "text" [(ngModel)] = "Name">
+{{ Name }}
+
+<!-- Data from Parent Class -->
+<h2>{{ "Hello " + parentData }}</h2>
+
+<!-- Data from Child class to Parent class -->
+<button (click) = "fireEvent()">Send</button>
